@@ -1,0 +1,667 @@
+/* ===== ПОДКЛЮЧЕНИЕ ШРИФТА PACIFICO ===== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ===== ОБЩИЕ СТИЛИ ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #F9F9F9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== ШРИФТ PACIFICO ДЛЯ ЗАГОЛОВКОВ ===== */
+h1, h2, .logo, .footer-logo {
+  font-family: 'Pacifico', cursive;
+}
+
+/* ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ===== */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ЗАГОЛОВКИ СЕКЦИЙ ===== */
+section h2 {
+  font-size: 32px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #800080;
+  letter-spacing: 1px;
+}
+
+/* ===== ШАПКА ===== */
+.home-header {
+  background: #800080;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(128, 0, 128, 0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+  opacity: 0.85;
+}
+
+.nav-menu a:hover {
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-login,
+.btn-register {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.btn-login:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.btn-register {
+  background: #FFFFFF;
+  color: #800080;
+}
+
+.btn-register:hover {
+  background: #5A005A;
+  color: #FFFFFF;
+}
+
+/* ===== ПРИВЕТСТВИЕ ===== */
+.hero-section {
+  background: #F9F9F9;
+  padding: 80px 0 70px;
+  text-align: center;
+  border-bottom: 1px solid #e8e0e8;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: #800080;
+  margin-bottom: 15px;
+}
+
+.hero-content .mission {
+  font-size: 22px;
+  font-weight: bold;
+  color: #800080;
+  opacity: 0.85;
+}
+
+.hero-content .philosophy {
+  font-size: 16px;
+  color: #666;
+  margin: 8px 0 12px 0;
+}
+
+.hero-content .sub-text {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+/* ===== КНОПКИ (ОСНОВНЫЕ) ===== */
+.btn-primary {
+  background: #800080;
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background: #5A005A;
+  transform: scale(1.02);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #800080;
+  border: 2px solid #800080;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: #800080;
+  color: #FFFFFF;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #800080;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+
+.btn-link:hover {
+  color: #5A005A;
+  text-decoration: underline;
+}
+
+/* ===== ПОПУЛЯРНЫЕ УСЛУГИ ===== */
+.services-section {
+  padding: 60px 0;
+  background: #FFFFFF;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #F9F9F9;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e8e0e8;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(128, 0, 128, 0.12);
+  border-color: #800080;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color: #800080;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 6px;
+}
+
+.service-price {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* ===== ПРИМЕРЫ МЕРОПРИЯТИЙ ===== */
+.portfolio-section {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.portfolio-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e8e0e8;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(128, 0, 128, 0.10);
+  border-color: #800080;
+}
+
+.portfolio-image {
+  background: #e8e0e8;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 14px;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 16px 20px 20px;
+}
+
+.portfolio-category {
+  display: inline-block;
+  background: #800080;
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 2px 12px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.portfolio-info h3 {
+  font-size: 16px;
+  color: #800080;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 4px;
+}
+
+.portfolio-info p {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* ===== НОВЫЕ ПРЕДЛОЖЕНИЯ ===== */
+.offers-section {
+  padding: 60px 0;
+  background: #FFFFFF;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.offer-card {
+  background: #F9F9F9;
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 4px solid #800080;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 20px rgba(128, 0, 128, 0.08);
+}
+
+.offer-badge {
+  display: inline-block;
+  background: #800080;
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 2px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.offer-card h3 {
+  font-size: 17px;
+  color: #800080;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 6px;
+}
+
+.offer-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* ===== ОТЗЫВЫ ===== */
+.reviews-section {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #e8e0e8;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  border-color: #800080;
+  box-shadow: 0 4px 20px rgba(128, 0, 128, 0.06);
+}
+
+.review-stars {
+  color: #800080;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 15px;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #800080;
+}
+
+.review-category {
+  font-size: 12px;
+  color: #888;
+}
+
+.reviews-section .btn-outline {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== АКЦИИ ===== */
+.promotions-section {
+  padding: 60px 0;
+  background: #FFFFFF;
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.promo-card {
+  background: #F9F9F9;
+  border-radius: 12px;
+  padding: 25px;
+  border: 2px solid #e8e0e8;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.promo-card:hover {
+  border-color: #800080;
+  transform: translateY(-3px);
+}
+
+.promo-badge {
+  display: inline-block;
+  background: #800080;
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 2px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.promo-card h3 {
+  font-size: 17px;
+  color: #800080;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 6px;
+}
+
+.promo-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+/* ===== БЫСТРАЯ КОНСУЛЬТАЦИЯ ===== */
+.consultation-section {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+.consultation-sub {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.consultation-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  background: #FFFFFF;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+  outline: none;
+  border-color: #800080;
+  box-shadow: 0 0 0 3px rgba(128, 0, 128, 0.1);
+}
+
+.consultation-form textarea {
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.consultation-form .btn-primary {
+  display: block;
+  width: 100%;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #e8f0e8;
+  color: #2d5a2d;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  border-left: 4px solid #800080;
+}
+
+/* ===== НОВОСТИ ===== */
+.news-section {
+  padding: 60px 0;
+  background: #FFFFFF;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.news-card {
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e8e0e8;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(128, 0, 128, 0.08);
+  border-color: #800080;
+}
+
+.news-date {
+  display: inline-block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.news-card h3 {
+  font-size: 17px;
+  color: #800080;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 6px;
+}
+
+.news-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* ===== ПОДВАЛ ===== */
+.home-footer {
+  background: #800080;
+  color: #FFFFFF;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-family: 'Pacifico', cursive;
+  color: #FFFFFF;
+}
+
+.footer-info {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+  .services-grid,
+  .reviews-grid,
+  .offers-grid,
+  .promotions-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
